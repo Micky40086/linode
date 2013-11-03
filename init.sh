@@ -11,16 +11,16 @@ pkill haveged
 
 pacman-key --populate archlinux
 
+# @TODO 變更 pacman 安裝來源，如美國或日本
+
 # 更新
 pacman -Syu
 
 # 安裝套件
-pacman -S nginx passenger ruby mariadb vim zsh git sudo base-devel wget
+pacman -S nginx passenger ruby mariadb vim zsh git sudo base-devel wget abs
 
-# 抓取 dot files
-git clone https://github.com/pct/dotfiles
-cp -rp dotfiles/.* ~/ 
-
+# 執行 abs
+abs
 
 # 安裝 rails 
 gem install rails
