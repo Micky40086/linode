@@ -17,7 +17,7 @@ pacman-key --populate archlinux
 pacman -Syu
 
 # 安裝套件
-pacman -S nginx passenger ruby mariadb vim zsh git sudo base-devel wget abs
+pacman -S nginx passenger ruby mariadb vim zsh git sudo base-devel wget abs cmake python python2
 
 # 執行 abs
 abs
