@@ -24,6 +24,7 @@ pacman -S nginx passenger ruby mariadb vim zsh git sudo base-devel wget abs cmak
 # 執行 abs
 echo '===== abs ====='
 abs
+abs # 第一次有可能失敗
 
 # 安裝 rails
 echo '===== install rails ====='
