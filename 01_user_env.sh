@@ -11,5 +11,6 @@ cd -
 # 抓取 dot files
 git clone https://github.com/pct/dotfiles
 cp -rp dotfiles/.* ~/ && rm -rf .git
+source ~/.zshrc
 
 
