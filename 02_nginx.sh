@@ -9,3 +9,6 @@ sudo abs
 mkdir src
 cp -rpf /var/abs/community/nginx src
 # @TODO 進入 nginx, 指定 --add-module=/lib/passenger/ext/nginx
+
+# 複製 config
+sudo cp -rpf ./conf/nginx/* /etc/nginx/
