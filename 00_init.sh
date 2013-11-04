@@ -31,6 +31,7 @@ echo '===== install rails ====='
 curl https://raw.github.com/pct/dotfiles/master/.gemrc > .gemrc
 gem install rails
 gem install mysql2
+gem install bundler
 
 # visudo
 echo '===== visudo ====='
