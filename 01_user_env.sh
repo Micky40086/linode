@@ -11,6 +11,9 @@ cd -
 # 抓取 dot files
 git clone https://github.com/pct/dotfiles
 cp -rp dotfiles/.* ~/ && rm -rf .git
+
+# 變更為 zsh，path: /usr/bin/zsh
+chsh
 source ~/.zshrc
 
 
