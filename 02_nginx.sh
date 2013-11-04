@@ -12,5 +12,6 @@ cp -rpf /var/abs/community/nginx src
 
 # 複製 config
 cd /etc/nginx
+sudo mkdir logs
 sudo curl https://raw.github.com/pct/linode/master/conf/nginx/nginx.conf > nginx.conf
 sudo curl https://raw.github.com/pct/linode/master/conf/nginx/vhost.conf > vhost.conf
