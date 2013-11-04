@@ -13,6 +13,7 @@ pkill haveged
 pacman-key --populate archlinux
 
 # @TODO 變更 pacman 安裝來源，如美國或日本
+vi /etc/pacman.d/mirrorlist
 
 # 更新
 pacman -Syu
