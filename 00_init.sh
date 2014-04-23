@@ -1,5 +1,7 @@
 #!/bin/sh
 
+su -
+
 # ======================
 # 系統
 # ======================
@@ -39,6 +41,7 @@ abs # 第一次有可能失敗
 # 安裝 rails
 echo '===== install rails ====='
 curl https://raw.github.com/pct/dotfiles/master/.gemrc > .gemrc
+gem update
 gem install rails
 gem install mysql2
 gem install bundler
