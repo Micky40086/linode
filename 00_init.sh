@@ -22,7 +22,7 @@ vi /etc/pacman.d/mirrorlist
 pacman -Syu
 
 # 安裝套件
-pacman -S nginx passenger ruby mariadb vim zsh git sudo base-devel wget abs cmake python python2 tmux nodejs netctl iproute2 net-tools
+pacman -S nginx passenger ruby mariadb vim zsh git sudo base-devel wget abs cmake python python2 tmux nodejs netctl iproute2 net-tools libev
 
 # 啟動 dhcpcd
 systemctl enable dhcpcd
