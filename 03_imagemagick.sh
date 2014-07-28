@@ -1,5 +1,6 @@
 #!/bin/sh
-su -
+
+# 使用 root 身分
 
 # 重編 imagemagick
 abs

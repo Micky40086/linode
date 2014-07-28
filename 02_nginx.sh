@@ -1,5 +1,6 @@
 #!/bin/sh
-su -
+
+# TODO 使用 root 身分
 
 cd /lib/passenger
 rake nginx
