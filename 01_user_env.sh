@@ -15,6 +15,3 @@ cp -rp dotfiles/.* ~/
 
 # 變更為 zsh，path: /usr/bin/zsh
 chsh
-source ~/.zshrc
-
-
