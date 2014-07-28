@@ -11,6 +11,7 @@ echo '===== pacman init ====='
 haveged -w 1024
 pacman-key --init
 pkill haveged
+pacman -R haveged
 
 pacman-key --populate archlinux
 
@@ -21,7 +22,10 @@ vi /etc/pacman.d/mirrorlist
 pacman -Syu
 
 # 安裝套件
-pacman -S nginx passenger ruby mariadb vim zsh git sudo base-devel wget abs cmake python python2 tmux nodejs netctl iproute2
+pacman -S nginx passenger ruby mariadb vim zsh git sudo base-devel wget abs cmake python python2 tmux nodejs netctl iproute2 net-tools
+
+# 啟動 dhcpcd
+systemctl enable dhcpcd
 
 # 啟動 nginx, mysql
 systemctl enable mysqld
