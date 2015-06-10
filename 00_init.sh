@@ -45,7 +45,7 @@ abs # 第一次有可能失敗
 
 # 安裝 rails
 echo '===== install rails ====='
-curl https://raw.github.com/pct/dotfiles/master/.gemrc > .gemrc
+curl https://raw.githubusercontent.com/pct/linode/master/dotfiles/.gemrc > .gemrc
 gem update
 gem install rails
 gem install mysql2
