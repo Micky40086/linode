@@ -5,7 +5,7 @@
 pacaur -S aur/nginx-passenger
 
 cd /etc/nginx
-sudo mkdir logs
+sudo mkdir -p logs
 sudo curl https://raw.github.com/pct/linode/master/conf/nginx/nginx.conf > nginx.conf
 sudo curl https://raw.github.com/pct/linode/master/conf/nginx/vhost.conf > vhost.conf
 
