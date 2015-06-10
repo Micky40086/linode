@@ -43,16 +43,19 @@ echo '===== abs ====='
 abs
 abs # 第一次有可能失敗
 
+# visudo
+echo '===== visudo ====='
+
 # 安裝 rails
 echo '===== install rails ====='
 curl https://raw.githubusercontent.com/pct/linode/master/dotfiles/.gemrc > .gemrc
-gem update
-gem install rails
-gem install mysql2
-gem install bundler
 
-# visudo
-echo '===== visudo ====='
+echo '請設定 /etc/gemrc, 使用 --no-user-install'
+
+#gem update
+#gem install rails
+#gem install mysql2
+#gem install bundler
 
 # ===========================
 # 使用者
@@ -62,5 +65,4 @@ echo '===== visudo ====='
 echo '===== add user ====='
 useradd -mG wheel pct
 passwd pct
-
 
