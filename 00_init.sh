@@ -46,7 +46,7 @@ abs # 第一次有可能失敗
 # visudo
 echo '===== visudo ====='
 
-# 安裝 rails
+# @TODO 安裝 rails
 echo '===== install rails ====='
 curl https://raw.githubusercontent.com/pct/linode/master/dotfiles/.gemrc > .gemrc
 
