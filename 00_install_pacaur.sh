@@ -5,6 +5,9 @@
 gpg --list-keys
 gpg --recv-keys 1EB2638FF56C0C53 #cower
 
+mkdir -p ~/src
+cd ~/src
+
 wget https://aur.archlinux.org/packages/co/cower/cower.tar.gz
 wget https://aur.archlinux.org/packages/pa/pacaur/pacaur.tar.gz
 
