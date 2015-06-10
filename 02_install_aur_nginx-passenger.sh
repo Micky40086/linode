@@ -8,4 +8,4 @@ mkdir logs
 curl https://raw.github.com/pct/linode/master/conf/nginx/nginx.conf > nginx.conf
 curl https://raw.github.com/pct/linode/master/conf/nginx/vhost.conf > vhost.conf
 
-echo 'Please try nginx now!'
+echo 'Please see https://github.com/t-richards/aur-nginx-passenger#configuration and try nginx now!'
