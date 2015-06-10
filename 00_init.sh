@@ -22,7 +22,8 @@ vi /etc/pacman.d/mirrorlist
 pacman -Syu
 
 # 安裝套件
-pacman -S nginx passenger ruby mariadb vim zsh git sudo base-devel wget abs cmake python python2 tmux nodejs netctl iproute2 net-tools libev
+# @TODO 不用 nginx 跟 passenger, 因為用 aur/nginx-passenger 可以都裝
+pacman -S ruby mariadb vim zsh git sudo base-devel wget abs cmake python python2 tmux nodejs netctl iproute2 net-tools libev
 
 # 啟動 dhcpcd
 systemctl enable dhcpcd
