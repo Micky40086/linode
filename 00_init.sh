@@ -28,12 +28,10 @@ pacman -S ruby mariadb vim zsh git sudo base-devel wget abs cmake python python2
 # 啟動 dhcpcd
 systemctl enable dhcpcd
 
-# 啟動 nginx, mysql
+# 啟動 mysql
 systemctl enable mysqld
-systemctl enable nginx
 
 systemctl start mysqld
-systemctl start nginx
 
 # 設定 mysql 密碼
 mysql_secure_installation
