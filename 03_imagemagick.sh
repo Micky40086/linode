@@ -2,11 +2,11 @@
 
 # @TODO 使用 user 身分
 
-gpg --recv-keys 89AB63D48277377A #imagemagick
+#gpg --recv-keys 89AB63D48277377A #imagemagick
 
 # 重編 imagemagick
 
-abs
+sudo abs
 mkdir -p ~/src
 cp -rpf /var/abs/extra/imagemagick ~/src/
 

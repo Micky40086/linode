@@ -50,12 +50,12 @@ echo '===== visudo ====='
 echo '===== install rails ====='
 curl https://raw.githubusercontent.com/pct/linode/master/dotfiles/.gemrc > .gemrc
 
-echo '請設定 /etc/gemrc, 使用 --no-user-install'
+echo 'gem: --no-user-install --no-rdoc --no-ri' > /etc/gemrc
 
-#gem update
-#gem install rails
-#gem install mysql2
-#gem install bundler
+gem update
+gem install rails
+gem install mysql2
+gem install bundler
 
 # ===========================
 # 使用者
