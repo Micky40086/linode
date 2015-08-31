@@ -12,4 +12,5 @@ cp -rpf /var/abs/extra/imagemagick ~/src/
 
 # @TODO 進入 imagemagick, 去除 --enable-hdri (因為 rails carrierwave)
 
+echo 'makepkg -s --skipinteg'
 echo 'sudo pacman -U imagemagick*.pkg.tar.xz'
