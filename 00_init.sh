@@ -31,6 +31,7 @@ systemctl enable dhcpcd
 # 啟動 mysql
 systemctl enable mysqld
 
+mysql_install_db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
 systemctl start mysqld
 
 # 設定 mysql 密碼
