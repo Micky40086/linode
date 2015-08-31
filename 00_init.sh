@@ -45,16 +45,11 @@ abs # 第一次有可能失敗
 # visudo
 echo '===== visudo ====='
 
-# @TODO 安裝 rails
+# set gemrc
 echo '===== install rails ====='
 curl https://raw.githubusercontent.com/pct/linode/master/dotfiles/.gemrc > .gemrc
 
 echo 'gem: --no-user-install --no-rdoc --no-ri' > /etc/gemrc
-
-gem update
-gem install rails
-gem install mysql2
-gem install bundler
 
 # ===========================
 # 使用者
