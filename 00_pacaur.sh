@@ -10,8 +10,8 @@ export PATH=$PATH:/usr/bin/core_perl
 mkdir -p ~/src
 cd ~/src
 
-wget https://aur.archlinux.org/cgit/aur.git/snapshot/cower.tar.gz
-wget https://aur.archlinux.org/cgit/aur.git/snapshot/pacaur.tar.gz
+curl https://aur.archlinux.org/cgit/aur.git/snapshot/cower.tar.gz > cower.tar.gz
+curl https://aur.archlinux.org/cgit/aur.git/snapshot/pacaur.tar.gz > pacaur.tar.gz
 
 tar xvf cower.tar.gz
 tar xvf pacaur.tar.gz
