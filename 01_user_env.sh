@@ -7,7 +7,6 @@ curl -L https://github.com/oh-my-fish/oh-my-fish/raw/master/bin/install | fish
 
 # 安裝 vimrc-core
 wget --no-check-certificate https://github.com/pct/vimrc-core/raw/master/install.sh -O - | sh
-vim +PlugInstall +qall
 
 # 抓取 dot files
 cp -rp ./dotfiles/.* ~/
