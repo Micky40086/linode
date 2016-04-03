@@ -56,7 +56,9 @@ echo 'gem: --no-user-install --no-rdoc --no-ri' > /etc/gemrc
 # ===========================
 
 # 新增使用者，切換至使用者
-echo '===== add user ====='
+echo '===== add user, set password ====='
 useradd -mG wheel pct
 passwd pct
 
+echo '===== set user shell to /usr/bin/fish ====='
+chsh pct
