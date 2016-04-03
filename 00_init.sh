@@ -23,7 +23,7 @@ pacman -Syu
 
 # 安裝套件
 # @TODO 不用 nginx 跟 passenger, 因為用 aur/nginx-passenger 可以都裝
-pacman -S ruby mariadb vim zsh git sudo base-devel wget abs cmake python python2 tmux nodejs netctl iproute2 net-tools libev imagemagick
+pacman -S ruby mariadb vim git sudo base-devel wget abs cmake python python2 tmux nodejs netctl iproute2 net-tools libev imagemagick fish
 
 # 啟動 dhcpcd
 systemctl enable dhcpcd
