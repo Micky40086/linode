@@ -44,6 +44,7 @@ abs # 第一次有可能失敗
 
 # visudo
 echo '===== visudo ====='
+visudo
 
 # set gemrc
 echo '===== install rails ====='
