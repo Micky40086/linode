@@ -9,7 +9,8 @@ curl -L https://github.com/oh-my-fish/oh-my-fish/raw/master/bin/install | fish
 omf install fox
 
 # 抓取 dot files
-cp -rp ./dotfiles/.* ~/
+cp -rpf ./dotfiles/.* ~/
+echo '. ~/.config/fish/aliases.fish' >> . ~/.config/fish/config.fish
 
 # 變更為 fish，path: /usr/bin/fish
 chsh
