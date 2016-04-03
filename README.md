@@ -1,22 +1,37 @@
 # Usage
 
-    $ wget https://github.com/pct/linode/archive/master.zip
-    $ unzip
+```
+$ wget https://github.com/pct/linode/archive/master.zip
+$ unzip
+```
+
+----
+
+# ArchLinux
+
+## Pacman Mirrorlist Generator
+
+https://www.archlinux.org/mirrorlist/
     
+## Set Hostname
 
-# Static IP (for nodebalancer)
+```
+# hostnamectl set-hostname <new-hostname>
+```
 
-1. 編輯 /etc/netctl/static
+## Static IP (for nodebalancer)
+
+- 編輯 /etc/netctl/static
 
 ```
 Description='A basic static ethernet connection'
 Interface=eth0
 Connection=ethernet
 IP=static
-Address=('IP1' 'IP2')
+Address=('<IP1>' '<IP2>')
 #Routes=('192.168.0.0/24 via 192.168.1.2')
-Gateway='106.186.29.1'
-DNS=('DNS1', 'DNS2')
+Gateway='<GATEWAY>'
+DNS=('<DNS1>', '<DNS2>')
 
 ## For IPv6 autoconfiguration
 #IP6=stateless
@@ -27,7 +42,7 @@ DNS=('DNS1', 'DNS2')
 #Routes6=('abcd::1234')#Gateway6='1234:0:123::abcd'
 ```
 
-2. 啟用並測試查看、reboot
+- 啟用並測試查看、reboot
 
 ```
 # netctl enable static
