@@ -10,5 +10,3 @@ omf install fox
 cp -rpf ./dotfiles/.* ~/
 echo '. ~/.config/fish/aliases.fish' >>  ~/.config/fish/config.fish 
 
-# 安裝 vimrc-core
-wget --no-check-certificate https://github.com/pct/vimrc-core/raw/master/install.sh -O - | sh
