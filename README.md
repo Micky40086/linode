@@ -5,6 +5,10 @@ $ wget https://github.com/pct/linode/archive/master.zip
 $ unzip
 ```
 
+# Github?
+
+use `hub`
+
 ----
 
 # ArchLinux
