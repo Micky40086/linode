@@ -8,7 +8,7 @@
 
 # set locale
 cat conf/locale.conf >> /etc/locale.conf
-echo "en_US.UTF-8 UTF-8\nzh_TW.UTF-8 UTF-8" >> /etc/locale.gen
+echo -e "en_US.UTF-8 UTF-8\nzh_TW.UTF-8 UTF-8" >> /etc/locale.gen
 locale-gen
 
 # 初始 pacman
