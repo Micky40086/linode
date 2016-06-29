@@ -4,10 +4,9 @@
 
 pacaur -S aur/nginx-mainline-passenger
 
-cd /etc/nginx
-sudo mkdir -p sites
-sudo curl https://raw.github.com/pct/linode/master/conf/nginx/nginx.conf > nginx.conf
-sudo curl https://raw.github.com/pct/linode/master/conf/nginx/vhost.conf > sites/main.conf
+sudo mkdir -p /etc/nginx/sites
+sudo cp conf/nginx/nginx.conf /etc/nginx/
+sudo cp conf/nginx/vhost.conf /etc/nginx/sites/main.conf
 
 sudo systemctl enable nginx
 
