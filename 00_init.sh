@@ -29,6 +29,10 @@ pacman -Syu
 # 安裝套件
 pacman -S ruby mariadb vim git sudo base-devel wget abs cmake python python2 tmux nodejs netctl iproute2 net-tools libev imagemagick fish libxslt hub tig
 
+# ntpd
+systemctl enable ntpd
+systemctl start ntpd
+
 # 啟動 dhcpcd
 systemctl enable dhcpcd
 
