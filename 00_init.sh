@@ -71,3 +71,5 @@ passwd pct
 
 echo '===== set user shell to /usr/bin/fish ====='
 chsh pct
+
+echo '===== @TODO create a new account ===='
