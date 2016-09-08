@@ -6,7 +6,7 @@
 apt update; apt dist-upgrade
 
 # 安相關套件
-apt install -y mariadb-client mariadb-server libmariadb-client-lgpl-dev-compat libmariadb-client-lgpl-dev imagemagick nodejs ruby
+apt install -y mariadb-client mariadb-server libmariadb-client-lgpl-dev-compat libmariadb-client-lgpl-dev imagemagick nodejs ruby git tig
 
 
 # mysql 安全設定

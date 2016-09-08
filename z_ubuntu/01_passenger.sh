@@ -11,3 +11,5 @@ sh -c 'echo deb https://oss-binaries.phusionpassenger.com/apt/passenger xenial m
 apt update
 
 apt install -y nginx-extras passenger
+
+echo 'uncomment `# include /etc/nginx/passenger.conf;` from /etc/nginx/nginx.conf'
