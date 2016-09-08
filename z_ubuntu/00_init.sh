@@ -6,11 +6,14 @@
 apt update; apt dist-upgrade
 
 # 安相關套件
-apt install -y imagemagick nodejs ruby ruby-dev git tig vim fish 
+apt install -y imagemagick nodejs ruby ruby-dev git tig vim fish curl
 
 apt install -y mariadb-client mariadb-server libmariadb-client-lgpl-dev-compat libmariadb-client-lgpl-dev libnetcdf-dev libssl-dev libcrypto++-dev
 
 # gem
+curl https://raw.githubusercontent.com/pct/linode/master/dotfiles/.gemrc > .gemrc
+echo 'gem: --no-user-install --no-rdoc --no-ri' > /etc/gemrc
+
 gem install bundler mysql2
 
 # mysql 安全設定
@@ -20,6 +23,8 @@ mysql_secure_installation
 useradd -mG sudo pct
 passwd pct
 
+echo '===== set user shell to /usr/bin/fish ====='
+chsh pct
 # 其他
 echo 'copy dotfiles yourself!'
 
