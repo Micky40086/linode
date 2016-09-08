@@ -6,8 +6,12 @@
 apt update; apt dist-upgrade
 
 # 安相關套件
-apt install -y mariadb-client mariadb-server libmariadb-client-lgpl-dev-compat libmariadb-client-lgpl-dev imagemagick nodejs ruby git tig
+apt install -y imagemagick nodejs ruby ruby-dev git tig vim fish 
 
+apt install -y mariadb-client mariadb-server libmariadb-client-lgpl-dev-compat libmariadb-client-lgpl-dev libnetcdf-dev libssl-dev libcrypto++-dev
+
+# gem
+gem install bundler mysql2
 
 # mysql 安全設定
 mysql_secure_installation
@@ -16,4 +20,6 @@ mysql_secure_installation
 useradd -mG sudo pct
 passwd pct
 
+# 其他
+echo 'copy dotfiles yourself!'
 
