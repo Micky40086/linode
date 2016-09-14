@@ -14,8 +14,9 @@ echo 'set -x LC_ALL en_US.UTF-8' >> ~/.config/fish/config.fish
 echo '. ~/.config/fish/aliases.fish' >>  ~/.config/fish/config.fish 
 
 # 增加小軟體
-# imgcat
 mkdir -p ~/bin
+
+# imgcat
 curl https://raw.githubusercontent.com/gnachman/iTerm2/master/tests/imgcat > ~/bin/imgcat
 chmod +x ~/bin/imgcat
 
