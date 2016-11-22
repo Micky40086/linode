@@ -20,6 +20,10 @@ pacman -R haveged
 
 pacman-key --populate archlinux
 
+# change localtime
+rm -f /etc/localtime
+ln -s /usr/share/zoneinfo/Asia/Taipei /etc/localtime
+
 # @TODO 變更 pacman 安裝來源，如美國或日本
 vi /etc/pacman.d/mirrorlist
 
