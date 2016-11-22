@@ -31,7 +31,11 @@ vi /etc/pacman.d/mirrorlist
 pacman -Syu
 
 # 安裝套件
-pacman -S ruby mariadb vim git sudo base-devel wget abs cmake python python2 tmux nodejs netctl iproute2 net-tools libev imagemagick fish libxslt hub tig
+pacman -S ruby mariadb vim git sudo base-devel wget abs cmake python python2 tmux nodejs netctl iproute2 net-tools libev imagemagick fish libxslt hub tig syslog-ng
+
+# syslog-ng
+systemctl enable syslog-ng
+systemctl start syslog-ng
 
 # ntpd
 systemctl enable ntpd
