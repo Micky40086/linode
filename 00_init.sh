@@ -45,8 +45,8 @@ systemctl start syslog-ng
 systemctl enable ntpd
 systemctl start ntpd
 
-# 啟動 dhcpcd (視情況需要)
-#systemctl enable dhcpcd
+# 啟動 dhcpcd (視情況需要，如果要用 linode node balancer 就要自行設定 eth0 static)
+systemctl enable dhcpcd
 
 # 啟動 mysql
 systemctl enable mysqld
