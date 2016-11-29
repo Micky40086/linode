@@ -1,8 +1,10 @@
 #!/bin/sh
 # root 執行
 
+echo 'user:ROOT'
+
 # backup
-$BIN_PATH='/home/pct/bin'
+BIN_PATH='/home/pct/bin'
 cp ./backup/db_backup.sh $BIN_PATH
 chmod +x $BIN_PATH/db_backup.sh
 chown -R pct $BIN_PATH
