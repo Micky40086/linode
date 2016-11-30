@@ -14,7 +14,7 @@ rm -f /etc/localtime
 ln -s /usr/share/zoneinfo/Asia/Taipei /etc/localtime
 
 # 安裝套件
-pkg install ruby vim-lite git sudo wget cmake python tmux node libev fish zsh hub tig mariadb101-server
+pkg install ruby vim-lite git sudo wget cmake python tmux node libev fish zsh hub tig mariadb101-server tcptraceroute axel tree
 
 # visudo
 echo '===== visudo ====='
