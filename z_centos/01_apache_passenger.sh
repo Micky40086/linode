@@ -4,8 +4,5 @@ yum install -y pygpgme curl
 
 curl --fail -sSLo /etc/yum.repos.d/passenger.repo https://oss-binaries.phusionpassenger.com/yum/definitions/el-passenger.repo
 
-yum install -y nginx passenger
+yum install -y mod_passenger
 
-echo ""
-
-echo 'set passenger at /etc/nginx/conf.d/passenger.conf'
