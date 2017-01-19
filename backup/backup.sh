@@ -5,6 +5,8 @@ BACKUP_DIR=$USER_HOME/SERVER_BACKUP
 TIME_BACKUP_SCRIPT=$USER_HOME/bin/rsync_tmbackup.sh
 NAS_URL='xxx@xxx.xxx:/volume1/backup'
 
+/usr/sbin/logrotate -f /etc/logrotate.d/nginx
+
 mysqldump xxx > $BACKUP_DIR/db.sql
 rsync -av -delete /srv/www $BACKUP_DIR/
 rsync -av -delete /opt/nginx/conf $BACKUP_DIR/nginx/
