@@ -6,7 +6,7 @@ EMAIL='xxx@example.com'
 WEBROOT='/srv/http/xxx/public'
 DOMAIN='xxx.xxx.xxx'
 
-pacman -S certbot certbot-nginx
+pacman -Sy certbot certbot-nginx
 
 certbot certonly --email $EMAIL --webroot -w $WEBROOT -d $DOMAIN
 
