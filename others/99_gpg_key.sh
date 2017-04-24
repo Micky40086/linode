@@ -1,2 +1,2 @@
 #!/bin/sh
-gpg --recv-keys --keyserver hkp://pgp.mit.edu <GPG_KEY>
+gpg --recv-keys --keyserver hkp://pgp.mit.edu $1
