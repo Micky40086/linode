@@ -9,3 +9,7 @@ yum install -y nginx passenger
 echo ""
 
 echo 'set passenger at /etc/nginx/conf.d/passenger.conf'
+
+# 如果沒有 ipv6, 使用: 
+# gem install passenger
+# passenger-install-nginx-module --extra-configure-flags="--with-ipv6"
