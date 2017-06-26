@@ -16,10 +16,6 @@ locale-gen
 
 # 初始 pacman
 echo '===== pacman init ====='
-haveged -w 1024
-pacman-key --init
-pkill haveged
-pacman -R haveged
 
 pacman-key --populate archlinux
 
@@ -34,7 +30,7 @@ vi /etc/pacman.d/mirrorlist
 pacman -Syu
 
 # 安裝套件
-pacman -S ruby mariadb vim git sudo base-devel wget abs cmake python python2 tmux nodejs netctl iproute2 net-tools libev imagemagick fish libxslt hub tig syslog-ng cronie
+pacman -S ruby mariadb vim git sudo base-devel wget asp cmake python python2 tmux nodejs netctl iproute2 net-tools libev imagemagick fish libxslt hub tig syslog-ng cronie ntp
 
 # cronie
 systemctl enable cronie
@@ -60,11 +56,6 @@ systemctl start mysqld
 # 設定 mysql 密碼
 mysql_secure_installation
 
-# 執行 abs
-echo '===== abs ====='
-abs
-abs # 第一次有可能失敗
-
 # visudo
 echo '===== visudo ====='
 visudo
@@ -87,4 +78,3 @@ passwd $USER_NAME
 echo '===== set user shell to /usr/bin/fish ====='
 chsh $USER_NAME
 
-echo '===== @TODO create a new account ===='
