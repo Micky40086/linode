@@ -1,6 +1,9 @@
 #!/bin/sh
 
+USER_NAME="pct"
+
 # TODO 使用 root 身分
+
 
 # ======================
 # 系統
@@ -78,10 +81,10 @@ echo 'gem: --no-user-install --no-rdoc --no-ri' > /etc/gemrc
 
 # 新增使用者，切換至使用者
 echo '===== add user, set password ====='
-useradd -mG wheel pct
-passwd pct
+useradd -mG wheel $USER_NAME
+passwd $USER_NAME
 
 echo '===== set user shell to /usr/bin/fish ====='
-chsh pct
+chsh $USER_NAME
 
 echo '===== @TODO create a new account ===='
