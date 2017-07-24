@@ -8,3 +8,6 @@ yum-config-manager --enable epel
 yum upgrade
 yum install -y nodejs
 
+# gem
+cp ./etc/gemrc /etc/
+gem install bundler
