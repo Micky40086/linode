@@ -10,5 +10,5 @@ pacman -Sy certbot certbot-nginx
 
 certbot certonly --email $EMAIL --webroot -w $WEBROOT -d $DOMAIN # -d DOMAIN2 -d DOMAIN3
 
-#echo "1 1 1 * * root certbot certonly --email $EMAIL --webroot -w $WEBROOT -d $DOMAIN" >> /etc/crontab
-echo "1 1 1 * * root certbot renew" >> /etc/crontab
+#echo "1 1 * * * root certbot certonly --email $EMAIL --webroot -w $WEBROOT -d $DOMAIN" >> /etc/crontab
+echo "1 1 * * * root certbot renew" >> /etc/crontab
