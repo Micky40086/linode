@@ -8,6 +8,8 @@ yum-config-manager --enable epel
 yum upgrade
 yum install -y nodejs
 
-# gem
-cp ./etc/gemrc /etc/
-gem install bundler
+yum remove git
+yum install https://centos7.iuscommunity.org/ius-release.rpm
+yum install git2u
+
+# gemrc
