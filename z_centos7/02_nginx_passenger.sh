@@ -12,6 +12,8 @@ echo 'check correct ruby path at /etc/nginx/conf.d/passenger.conf'
 cp /etc/nginx/conf.d/passenger.conf /etc/nginx/conf.d/passenger.conf.orig
 sed -e 's|^#passenger|passenger|' /etc/nginx/conf.d/passenger.conf.orig > /etc/nginx/conf.d/passenger.conf
 
+cp ../conf/nginx/vhost.conf  /etc/nginx/conf.d/default.conf
+
 systemctl enable nginx
 systemctl start nginx
 
