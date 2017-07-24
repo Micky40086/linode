@@ -15,6 +15,8 @@ sed -e 's|^#passenger|passenger|' /etc/nginx/conf.d/passenger.conf.orig > /etc/n
 systemctl enable nginx
 systemctl start nginx
 
+mkdir -p /srv/http
+
 # 如果沒有 ipv6, 使用: 
 # gem install passenger
 # passenger-install-nginx-module --extra-configure-flags="--with-ipv6"

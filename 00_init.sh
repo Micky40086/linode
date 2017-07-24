@@ -76,5 +76,5 @@ useradd -mG wheel $USER_NAME
 passwd $USER_NAME
 
 echo '===== set user shell to /usr/bin/fish ====='
-chsh $USER_NAME
+chsh -s /usr/bin/fish $USER_NAME
 
