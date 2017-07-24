@@ -13,6 +13,7 @@ cp /etc/nginx/conf.d/passenger.conf /etc/nginx/conf.d/passenger.conf.orig
 sed -e 's|^#passenger|passenger|' /etc/nginx/conf.d/passenger.conf.orig > /etc/nginx/conf.d/passenger.conf
 
 cp ../conf/nginx/vhost.conf  /etc/nginx/conf.d/default.conf
+cp nginx/conf.d/_optimize.conf /etc/nginx/conf.d/_optimize.conf
 
 systemctl enable nginx
 systemctl start nginx
