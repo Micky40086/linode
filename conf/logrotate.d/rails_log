@@ -1,0 +1,10 @@
+$RAILS_DIR/log/*.log {
+  su pct pct
+  daily
+  missingok
+  rotate 7
+  compress
+  delaycompress
+  notifempty
+  copytruncate
+}
