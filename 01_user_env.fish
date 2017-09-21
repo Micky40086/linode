@@ -1,10 +1,13 @@
 #!/usr/bin/fish
 
+# 安裝 fisherman
+curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
+
 # 安裝 oh-my-fish
 curl -L https://github.com/oh-my-fish/oh-my-fish/raw/master/bin/install | fish
 
 # 使用 fox theme
-omf install fox
+fisher omf/fox
 
 # 抓取 dot files
 cp -rpf ./dotfiles/.* ~/
