@@ -7,7 +7,7 @@ curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fishe
 curl -L https://github.com/oh-my-fish/oh-my-fish/raw/master/bin/install | fish
 
 # 使用 fox theme
-fisher omf/fox
+fisher omf/theme-fox
 
 # 抓取 dot files
 cp -rpf ./dotfiles/.* ~/
