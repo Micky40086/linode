@@ -34,6 +34,8 @@ pacman -S ruby mariadb vim git sudo base-devel wget asp cmake python python2 tmu
 
 # cronie
 systemctl enable cronie
+# use stop to fix cronie?
+systemctl stop cronie
 systemctl start cronie
 
 # syslog-ng
