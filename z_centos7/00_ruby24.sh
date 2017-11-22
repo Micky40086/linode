@@ -5,10 +5,10 @@
 # system update
 yum -y update
 yum -y groupinstall "Development Tools"
-yum -y install libxslt-devel libyaml-devel libxml2-devel gdbm-devel libffi-devel zlib-devel openssl-devel libyaml-devel readline-devel curl-devel openssl-devel pcre-devel git memcached-devel valgrind-devel mysql-devel ImageMagick-devel ImageMagick
+yum -y install libxslt-devel libyaml-devel libxml2-devel gdbm-devel libffi-devel zlib-devel openssl-devel libyaml-devel readline-devel curl-devel openssl-devel pcre-devel memcached-devel valgrind-devel mysql-devel ImageMagick-devel ImageMagick gcc
 
-# ruby 2.4.1
-version=2.4.1
+# ruby 2.4.2
+version=2.4.2
 cd /usr/local/src
 wget https://cache.ruby-lang.org/pub/ruby/2.4/ruby-$version.tar.gz
 tar zxvf ruby-$version.tar.gz
