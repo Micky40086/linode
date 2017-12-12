@@ -12,4 +12,4 @@ certbot certonly --email $EMAIL --webroot -w $WEBROOT -d $DOMAIN # -d DOMAIN2 -d
 
 #echo "1 1 * * * root certbot certonly --email $EMAIL --webroot -w $WEBROOT -d $DOMAIN" >> /etc/crontab
 # each Monday
-echo "1 1 * * 1 root certbot renew" >> /etc/crontab
+echo "1 1 * * 1 root certbot renew; systemctl reload nginx" >> /etc/crontab
