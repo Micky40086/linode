@@ -80,3 +80,4 @@ passwd $USER_NAME
 echo '===== set user shell to /usr/bin/fish ====='
 chsh -s /usr/bin/fish $USER_NAME
 
+echo '===== PLEASE set "slaac hwaddr" to /etc/dhcpcd.conf'
