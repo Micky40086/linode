@@ -9,3 +9,4 @@ sudo cp conf/nginx/vhost.conf /etc/nginx/sites/main.conf
 sudo systemctl enable nginx
 
 echo 'Please check if `systemctl enable nginx`'
+echo 'Please check if linode reverse dns had set!'
