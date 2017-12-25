@@ -1,6 +1,6 @@
 #!/bin/sh
 
-pacman -S nginx-mod-passenger
+sudo pacman -S nginx-mod-passenger
 
 sudo mkdir -p /etc/nginx/sites
 sudo cp conf/nginx/nginx.conf /etc/nginx/
