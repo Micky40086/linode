@@ -8,8 +8,9 @@ sudo cp conf/nginx/vhost.conf /etc/nginx/sites/main.conf
 
 sudo systemctl enable nginx
 
-sudo cp ./conf/systemd/system/puma-site.service /etc/systemd/system
-sudo systemctl enable puma-site.service
+sudo cp ./bin/check_puma.rb /home/pct/bin
+echo '*/5 1 * * * root /home/pct/bin/check_puma.rb' | sudo tee --append /etc/crontab
 
-echo 'Please check if linode reverse dns had set!'
-echo 'Please check /systemd/system/puma-site.service settings'
+echo 'Please check /etc/nginx/sites/main.conf'
+echo 'Please check /home/pct/bin/check_puma.rb'
+
