@@ -17,6 +17,9 @@ echo 'set -x LC_ALL en_US.UTF-8' >> ~/.config/fish/config.fish
 echo 'set -x LSCOLORS "dxfxcxdxbxegedabagacad"' >> ~/.config/fish/config.fish
 echo '. ~/.config/fish/aliases.fish' >>  ~/.config/fish/config.fish 
 
+mkdir -p ~/.config/fish/functions/
+curl https://raw.githubusercontent.com/oh-my-fish/theme-bobthefish/master/fish_greeting.fish > ~/.config/fish/functions/fish_greeting.fish
+
 # 增加小軟體
 mkdir -p ~/bin
 
