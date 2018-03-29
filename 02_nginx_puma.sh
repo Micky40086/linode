@@ -8,6 +8,7 @@ sudo cp conf/nginx/vhost.conf /etc/nginx/sites/main.conf
 
 sudo systemctl enable nginx
 
+sudo mkdir -p /home/pct/bin
 sudo cp ./bin/check_puma.rb /home/pct/bin
 echo '*/5 * * * * pct /home/pct/bin/check_puma.rb' | sudo tee --append /etc/crontab
 
