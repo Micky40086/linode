@@ -6,5 +6,5 @@ alias la='ls -a'
 alias sl=ls
 alias rm='rm -i'
 alias vi='nvim'
+alias vim='nvim'
 alias x=exit
-
