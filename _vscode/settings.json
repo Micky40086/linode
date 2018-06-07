@@ -1,0 +1,22 @@
+{
+    "window.zoomLevel": 0,
+    "editor.fontSize": 20,
+    "editor.fontFamily": "Fira Code, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "terminal.integrated.fontSize": 20,
+    "gitlens.keymap": "alternate",
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": false,
+        "suppressShowKeyBindingsNotice": true
+    },
+    "editor.tabSize": 2,
+    "emmet.triggerExpansionOnTab": true,
+    "gitlens.historyExplorer.enabled": true,
+    "prettier.eslintIntegration": true
+}
