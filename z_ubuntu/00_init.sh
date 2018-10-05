@@ -5,8 +5,8 @@
 # 如果連主機等太久，add name server 8.8.8.8 to first
 apt update; apt dist-upgrade
 
-# 安相關套件
-apt install -y imagemagick nodejs ruby ruby-dev git tig vim fish curl tmux nginx
+# 安裝相關套件
+apt install -y imagemagick nodejs ruby ruby-dev git tig vim fish curl tmux nginx net-tools
 
 apt install -y mariadb-client mariadb-server libmariadb-client-lgpl-dev-compat libmariadb-client-lgpl-dev libnetcdf-dev libssl-dev libcrypto++-dev libsqlite3-dev sqlite3
 
