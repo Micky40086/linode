@@ -1,6 +1,6 @@
 #!/bin/sh
 
-VERSION=2.3
+VERSION=2.5
 
 sudo apt-add-repository ppa:brightbox/ruby-ng
 sudo apt-get update
