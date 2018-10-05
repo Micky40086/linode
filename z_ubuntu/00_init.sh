@@ -8,7 +8,7 @@ apt update; apt dist-upgrade
 # 安相關套件
 apt install -y imagemagick nodejs ruby ruby-dev git tig vim fish curl tmux nginx
 
-apt install -y mariadb-client mariadb-server libmariadb-client-lgpl-dev-compat libmariadb-client-lgpl-dev libnetcdf-dev libssl-dev libcrypto++-dev
+apt install -y mariadb-client mariadb-server libmariadb-client-lgpl-dev-compat libmariadb-client-lgpl-dev libnetcdf-dev libssl-dev libcrypto++-dev libsqlite3-dev sqlite3
 
 # gem
 curl https://raw.githubusercontent.com/pct/linode/master/dotfiles/.gemrc > .gemrc
