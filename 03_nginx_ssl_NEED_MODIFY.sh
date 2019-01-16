@@ -7,7 +7,7 @@ WEBROOT='/srv/http/xxx/public'
 DOMAIN='xxx.xxx.xxx'
 DOMAIN2='www.xxx.xxx.xxx'
 
-pacman -Sy certbot certbot-nginx
+pacman -Sy certbot certbot-nginx community/python-acme
 
 certbot certonly --email $EMAIL --webroot -w $WEBROOT -d $DOMAIN -d $DOMAIN2 #-d DOMAIN3
 
