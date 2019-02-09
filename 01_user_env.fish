@@ -1,7 +1,8 @@
 #!/usr/bin/fish
 
 # 安裝 oh-my-fish
-curl -L https://github.com/oh-my-fish/oh-my-fish/raw/master/bin/install | fish
+
+curl -L https://get.oh-my.fish | fish
 
 # 使用 fox theme
 omf install fox
