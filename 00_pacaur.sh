@@ -11,14 +11,21 @@ mkdir -p ~/src
 cd ~/src
 
 curl https://aur.archlinux.org/cgit/aur.git/snapshot/cower.tar.gz > cower.tar.gz
+curl https://aur.archlinux.org/cgit/aur.git/snapshot/auracle-git.tar.gz > auracle-git.tar.gz
 curl https://aur.archlinux.org/cgit/aur.git/snapshot/pacaur.tar.gz > pacaur.tar.gz
 
 tar xvf cower.tar.gz
+tar xvf auracle-git.tar.gz
 tar xvf pacaur.tar.gz
 
 cd cower
 makepkg -sc --skipinteg
 sudo pacman -U cower*.pkg.tar.xz
+cd -
+
+cd auracle-git
+makepkg -sc --skipinteg
+sudo pacman -U auracle-git*.pkg.tar.xz
 cd -
 
 cd pacaur
