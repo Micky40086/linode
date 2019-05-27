@@ -30,7 +30,7 @@ vi /etc/pacman.d/mirrorlist
 pacman -Syu
 
 # 安裝套件
-pacman -S ruby mariadb vim git sudo base-devel wget asp cmake python python2 tmux nodejs netctl iproute2 net-tools libev imagemagick fish libxslt hub tig syslog-ng cronie ntp extra/python-pip neovim
+pacman -S ruby mariadb vim git sudo base-devel wget asp cmake python python2 tmux nodejs netctl iproute2 net-tools libev imagemagick fish libxslt hub tig syslog-ng cronie ntp extra/python-pip neovim the_silver_searcher
 
 # cronie
 systemctl enable cronie

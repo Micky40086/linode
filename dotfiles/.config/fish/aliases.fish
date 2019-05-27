@@ -8,3 +8,4 @@ alias rm='rm -i'
 alias vi='nvim'
 alias vim='nvim'
 alias x=exit
+alias grep='ag'
