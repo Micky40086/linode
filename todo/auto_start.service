@@ -1,0 +1,9 @@
+# https://ginqi7.github.io/posts/archlinux-autostarting.html
+[Unit]
+Description=AutoStart
+[Service]
+ExecStart=/root/auto_start.sh
+[Install]
+WantedBy=multi-user.target
+
+# 放到  /etc/systemd/system 
